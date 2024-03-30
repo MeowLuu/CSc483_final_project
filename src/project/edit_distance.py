@@ -1,4 +1,4 @@
-def damerau_levenshtein_distance(word1, word2):
+def edit_distance(word1, word2):
     m, n = len(word1), len(word2)
     
     # Initialize a 2D array to store distances
@@ -27,5 +27,5 @@ def damerau_levenshtein_distance(word1, word2):
 # Example usage
 word1 = "doctors"
 word2 = "dcotros"
-distance = damerau_levenshtein_distance(word1, word2)
+distance = edit_distance(word1, word2)
 print(f"Damerau-Levenshtein distance between '{word1}' and '{word2}' is: {distance}")
