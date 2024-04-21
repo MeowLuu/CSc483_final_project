@@ -1,9 +1,9 @@
 # CSc483_final_project
 
 # Author
-Hayden Arnold
-Nick Avalani
-Selina Lu
+- Hayden Arnold
+- Nick Avalani
+- Selina Lu
 
 # Files
 - `Project.ipynb`
