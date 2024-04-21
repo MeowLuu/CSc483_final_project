@@ -1,4 +1,8 @@
 # CSc483_final_project
+- Submission Day :
+
+# Goal
+This project develops a personalized recommendation system using Yelp's dataset, analyzing user reviews and business categories. It employs machine learning to predict user preferences based on historical ratings, recommending businesses by matching user queries to similar categories through a sophisticated string matching algorithm.
 
 # Author
 - Hayden Arnold
