@@ -47,6 +47,6 @@ def edit_distance(word1, word2):
 
 # Example usage
 word1 = "nude"
-word2 = "nudists"
+word2 = "nudist"
 distance = edit_distance(word1, word2)
 print(f"Damerau-Levenshtein distance between '{word1}' and '{word2}' is: {distance}")
