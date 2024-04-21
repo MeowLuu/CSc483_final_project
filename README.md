@@ -1,5 +1,20 @@
 # CSc483_final_project
 
+# Author
+Hayden Arnold
+Nick Avalani
+Selina Lu
+
+# Files
+- `Project.ipynb`
+- `business1.json`
+- `business2.json`
+- `business3.json`
+- `business4.json`
+- `business5.json`
+
+
+# Functionality
 1. Data Loading and Inspection:
  - It reads JSON data from three different files (`business`, `user`, `review`) and stores them in Pandas DataFrames. These datasets represent business listings, user details, and user reviews on Yelp.
  - The business data is printed to inspect its structure after being loaded.
@@ -20,3 +35,6 @@
  - The function `query` takes a user ID and a query string (a type of business category) as inputs. It then uses the user’s past review data to train a K-Nearest Neighbors classifier, predicting the user's potential ratings for businesses within the specified category.
  - It matches the user's query to the closest business category using the `edit_distance` function.
  - After identifying relevant businesses, it processes their data, predicts ratings using the trained model, and recommends the top businesses.
+
+# Resourse/Reference 
+- [yelp database] (https://www.yelp.com/dataset)
