@@ -1,7 +1,8 @@
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# run pip install sentence-transformers transformers scikit-learn as an admin on terminal before running this
+# NOTE: run pip install sentence-transformers transformers scikit-learn as an admin on terminal before running this
+
 model = SentenceTransformer('bert-base-nli-mean-tokens')
 
 def calculate_similarity(query, dataset):
@@ -13,13 +14,11 @@ def calculate_similarity(query, dataset):
         similarity = cosine_similarity(query_embedding, item_embedding)[0][0]
         similarities.append((item, similarity))
 
-    # Sort by similarity in descending order
+    # Sort by similarity in descending order, i.e the most relevant categories at the front
     similarities.sort(key=lambda x: x[1], reverse=True)
     return similarities
 
 # Example usage
-# query = "nude"
-# dataset = ["nudists", "pubs", "beaches", "restaurants"]
 query = "machine rental"
 dataset = ["machine & tool rental", "clothing rental", "karaoke rental"]
 
