@@ -29,24 +29,24 @@ This project develops a personalized recommendation system using Yelp's dataset,
 
 2. Data Handling in Chunks
 
-The script processes user and review data in chunks to manage memory efficiently, suitable for handling large datasets without overwhelming system memory. Each chunk is processed sequentially until the specified total number of records has been reached.
+  The script processes user and review data in chunks to manage memory efficiently, suitable for handling large       datasets without overwhelming system memory. Each chunk is processed sequentially until the specified total   number of records has been reached.
 
 3. Category Extraction
 
-Extracts and cleans unique business categories from the business dataset. This involves splitting category strings, stripping extra spaces, and ensuring uniqueness.
+  Extracts and cleans unique business categories from the business dataset. This involves splitting category   strings, stripping extra spaces, and ensuring uniqueness.
 
 4. Encoding and Data Preprocessing
 
-Converts categorical data into a numerical format using OrdinalEncoder. This includes encoding business names, addresses, cities, states, postal codes, and categories, making the data suitable for machine learning algorithms.
+  Converts categorical data into a numerical format using OrdinalEncoder. This includes encoding business names,   addresses, cities, states, postal codes, and categories, making the data suitable for machine learning algorithms.
 
 5. Similarity Calculation
 
-Uses the SentenceTransformer library to calculate the cosine similarity between a user's text query and the available categories, helping to identify the most relevant business category related to the query.
+  Uses the SentenceTransformer library to calculate the cosine similarity between a user's text query and the   available categories, helping to identify the most relevant business category related to the query.
 
 6. Recommendation System
 
-Query Function: Accepts a user ID and a text query (business type/category). It first checks if the user has enough reviews for reliable predictions. If valid, it trains a K-Nearest Neighbors classifier using the user's past review data and predicts potential ratings for businesses within the queried category.
-Output: Displays the top recommended businesses based on the predicted ratings, ordered by relevance and rating.
+  Query Function: Accepts a user ID and a text query (business type/category). It first checks if the user has    enough reviews for reliable predictions. If valid, it trains a K-Nearest Neighbors classifier using the user's     past review data and predicts potential ratings for businesses within the queried category.
+  Output: Displays the top recommended businesses based on the predicted ratings, ordered by relevance and rating.
 
 # Resourse/Reference 
 - [yelp database] (https://www.yelp.com/dataset)
