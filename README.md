@@ -54,7 +54,7 @@ To run the recommendation system:
 
 Ensure all dependencies are installed.
 Run the script section by section, beginning with data loading and moving through preprocessing and querying.
-Input a user ID and a query term to receive business recommendations.
+Input a user ID and a query term to receive business recommendations. An optional test flag is included if accuracy testing is needed.
 
 # Dependencies
 - Python 3.8+
