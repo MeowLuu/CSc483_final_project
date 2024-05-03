@@ -11,12 +11,7 @@ This project develops a personalized recommendation system using Yelp's dataset,
 - Selina Lu
 
 # Files
-- `Project.ipynb`
-- `business1.json`
-- `business2.json`
-- `business3.json`
-- `business4.json`
-- `business5.json`
+- `src/project/Project.ipynb`
 
 
 # Functionality
@@ -26,6 +21,8 @@ This project develops a personalized recommendation system using Yelp's dataset,
 - User Data: Load user data from a JSON file (yelp_academic_dataset_user.json), containing user details.
 - Review Data: Load review data from a JSON file (yelp_academic_dataset_review.json), which includes user-generated reviews on businesses.
 - Each dataset is loaded into Pandas DataFrames, allowing for easy data manipulation and analysis.
+
+  Please note that all three files are downloadable from the dataset (https://www.yelp.com/dataset), but that only a fraction of the data was used here, as the files exceed 20gb in total.
 
 2. Data Handling in Chunks
 
